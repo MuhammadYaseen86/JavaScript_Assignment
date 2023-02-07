@@ -105,15 +105,14 @@ if(totalSubjectPercentage >= 80) {
 	document.write("<strong>Total Marks:</strong>" + " "  + 300 + "<br>" );
 	document.write("<strong>Obtained Marks:</strong>" + " "  + totalSubjectObtMarks + "<br>" );
 	document.write("<strong>Percentage:</strong>" + " "  + totalSubjectPercentage + "%" +  "<br>" );
-	document.write("<strong>Grade:</strong>" + " F " + "<br>" );
+	document.write("<strong>Grade:</strong>" + " Fail " + "<br>" );
 	document.write("<strong>Remarks:</strong>" + "  Sorry  "  + "<br><br>" );
 }
 document.write("</div>");
 
-
 document.write("<strong>Q7:Store a secret number (ranging from 1 to 10) in a variable. Prompt user to guess the secret number.</strong>" + "<br>");
 document.write("<strong>a) If user guesses the same number, show “Bingo! Correct answer”.</strong>" + "<br>");
-document.write("<strong>b) If the guessed number +1 is the secret number, show “Close enough to the correct answer”.</strong>" + "<br>");
+document.write("<strong>b) If the guessed number +1 is the secret number, show “Close enough to the correct answer”.</strong>" + "<br><br>");
 
 var secretNumber = 5;
 var userInsertNum = +prompt("Enter a number between 1 and 10");
@@ -135,9 +134,8 @@ if( divisibleNum % 3 == 0) {
 }
 
 document.write("<strong>9: Write a program that checks whether the given input is an even number or an odd number.</strong>" + "<br>");
-// var secretNumber = 5;
 var checkEvenOrOdd = +prompt("Enter a number we check it is even or odd");
-if( checkEvenOrOdd % 3 == 0) {
+if( checkEvenOrOdd % 2 == 0) {
    document.write("<strong>Ans: The number is even</strong>" + "<br><br>");
 }else {
 	document.write("<strong>Ans: The number is odd</strong>" + "<br><br>");
@@ -149,7 +147,7 @@ document.write("<strong>b:) T > 30 then “The Weather today is Normal.”" + "<
 document.write("<strong>c:) T > 20 then “Today’s Weather is cool.”" + "<br>" );
 document.write("<strong>d:) T > 10 then “OMG! Today’s weather is so Cool.”" + "<br>" );
 
-var temperature = +prompt("Enter a number we check it is even or odd");
+var temperature = +prompt("Enter a number we check temperature");
 if( temperature > 40 ) {
    document.write("<strong>Ans: It is too hot outside.</strong>" + "<br><br>");
 }else if( temperature > 30 ) {
